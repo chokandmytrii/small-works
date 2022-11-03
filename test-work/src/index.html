@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Test</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="page">
+	<header class="page__header header">
+		<div class="container">
+			<ul class="header__rates">
+				<li class="header__rate"></li>
+				<li class="header__rate"></li>
+			</ul>
+			<img class="header__img" src="./img/coins.png" alt="coins">
+		</div>
+	</header>
+	<main class="page__main main">
+		<div class="container">
+			<form class="main__form form" action="#" id="form">
+				<label class="form__label label">
+					<input v-model.lazy.number="result1" class="label__input input" type="number"
+						placeholder="Put value">
+					<select v-model="currency1" class="input__select select">
+						<option class="select__option" value="USD">USD</option>
+						<option class="select__option" value="EUR">EUR</option>
+						<option class="select__option" value="UAH">UAH</option>
+					</select>
+				</label>
+				<label class="form__label label">
+					<input v-model.lazy.number="result2" class="label__input input" type="number"
+						placeholder="Put value">
+					<select v-model="currency2" class="input__select select">
+						<option class="select__option" value="UAH">UAH</option>
+						<option class="select__option" value="USD">USD</option>
+						<option class="select__option" value="EUR">EUR</option>
+					</select>
+				</label>
+				<div class="form__btns">
+					<button class="btn" @click="counting" type="button">Check</button>
+					<button class="btn" @click="clearResults" type="button">Clear all</button>
+				</div>
+			</form>
+		</div>
+	</main>
+	<footer class="page__footer footer">
+		<div class="container footer__block">
+			<div class="footer__part">created by <span class="footer__author author">Chokan Dmytrii</span></div>
+			<div class="footer__part">Information about currency was taken from <a class="footer__link"
+					href="https://www.exchangerate-api.com/docs/overview">this API</a></div>
+			<div class="footer__part">Please contact me by email!
+			</div>
+		</div>
+	</footer>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

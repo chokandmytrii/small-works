@@ -1,0 +1,60 @@
+.main {
+    margin-bottom: 200px;
+
+    &__form {}
+}
+
+.form {
+    @include position-center;
+    border: 2px solid $color-bg-footer;
+    padding: 50px 60px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px $color-bg-footer;
+
+    @media screen and (max-width: 768px) {
+        padding: 25px 30px;
+    }
+
+    @media screen and (max-width: 576px) {
+        transform: translate(-50%, -65%);
+    }
+
+    &__label {
+        margin-bottom: 25px;
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 10px;
+        }
+    }
+
+
+    &__btns {}
+}
+
+.label {
+
+
+    &__input {}
+}
+
+.input {
+    padding: 7px;
+    margin-right: 10px;
+    border-radius: 10px;
+
+    @media screen and (max-width: 768px) {
+        margin: 0 0 6px 0;
+    }
+
+    &__select {}
+}
+
+.select {
+    padding: 5px;
+    border-radius: 5px;
+
+    &__option {}
+}
