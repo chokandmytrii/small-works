@@ -535,7 +535,7 @@ var form = document.querySelector(".popup__form");
 var alertBlock = document.querySelector(".popup__alert");
 var page = document.querySelector(".page");
 function findLog(event) {
-  if (event.target.classList.contains("user-log") || event.target.classList.contains("user-log__svg")) {
+  if (event.target.classList.contains("user-log") || event.target.classList.contains("user-log__svg") || event.target.classList.contains("user-log__option")) {
     popup.classList.add("popup-active");
   }
 }
