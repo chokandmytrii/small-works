@@ -504,7 +504,7 @@ var bookshellVm = (0,vue_dist_vue_esm_browser__WEBPACK_IMPORTED_MODULE_30__.crea
     return beforeMount;
   }(),
   mounted: function mounted() {
-    this.contentOnScreen = JSON.parse(localStorage.getItem('contentOnScreen'));
+    this.contentOnScreen = JSON.parse(localStorage.getItem('contentOnScreen')) || true;
     this.basketList = JSON.parse(localStorage.getItem('basket')) || [];
   },
   updated: function updated() {
