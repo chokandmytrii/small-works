@@ -103,7 +103,7 @@ var bookResult = /*#__PURE__*/function () {
           case 0:
             startNumb = _args.length > 2 && _args[2] !== undefined ? _args[2] : 0;
             _context.next = 3;
-            return fetch("http://openlibrary.org/subjects/".concat(subject, ".json?limit=").concat(finNumb));
+            return fetch("https://openlibrary.org/subjects/".concat(subject, ".json?limit=").concat(finNumb));
           case 3:
             obj = _context.sent;
             _context.next = 6;
@@ -724,7 +724,7 @@ var bookSearch = /*#__PURE__*/function () {
           case 0:
             startNumb = _args.length > 2 && _args[2] !== undefined ? _args[2] : 0;
             _context.next = 3;
-            return fetch("http://openlibrary.org/search.json?q=".concat(title));
+            return fetch("https://openlibrary.org/search.json?q=".concat(title));
           case 3:
             obj = _context.sent;
             _context.next = 6;
