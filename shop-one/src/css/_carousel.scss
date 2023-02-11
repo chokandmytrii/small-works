@@ -1,0 +1,13 @@
+.carousel {
+    max-height: 360px;
+    overflow: hidden;
+    margin-bottom: $def-padding;
+
+    &-indicators {
+        z-index: 0;
+    }
+
+    &-inner {
+        z-index: -1;
+    }
+}
