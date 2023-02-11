@@ -1,0 +1,198 @@
+.cart {
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+
+    &__title {
+        margin-bottom: calc($def-padding*2);
+        font-size: $font-size-medium;
+        font-weight: $font-weight-bold;
+    }
+
+    &__content {
+        width: 100%;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+
+        &-wrapper {
+            border-radius: 10px;
+            margin-bottom: calc($def-padding*2);
+            overflow: hidden;
+            box-shadow: 0 5px 20px $background-footer;
+        }
+    }
+
+    &__list {
+        width: 66.66667%;
+        display: flex;
+        flex-direction: column;
+        padding: calc($def-padding*1.5) calc($def-padding*2);
+        max-height: 420px;
+        overflow-x: auto;
+    }
+
+    &-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: $def-padding;
+        position: relative;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        &::after {
+            content: '';
+            background-color: $background-footer;
+            height: 1.5px;
+            width: 110%;
+            position: absolute;
+            bottom: -12.5px;
+            left: -5%;
+        }
+
+        &__content {
+            display: flex;
+            align-items: center;
+        }
+
+        &__cover {
+            display: block;
+            max-height: 150px;
+            max-width: 100px;
+            width: 100%;
+        }
+
+        &__text {
+            margin-left: calc($small-pading * 2);
+            text-align: left;
+        }
+
+        &__title {
+            margin-bottom: $small-pading;
+        }
+    }
+
+    &-quantity {
+        display: flex;
+        align-items: center;
+
+        &__wrapper {
+            margin-left: $small-pading;
+            border-radius: $small-pading;
+            display: flex;
+            align-items: center;
+        }
+
+        &__btn {
+            background-color: transparent;
+            border: none;
+            font-size: $font-size-footer;
+            vertical-align: middle;
+
+            &:first-of-type {
+                margin-right: 2px;
+            }
+
+            &:last-of-type {
+                margin-left: 2px;
+            }
+        }
+
+        &__value {
+            background-color: $background-cart;
+            border-radius: 5px;
+            padding: 4px 7px;
+        }
+    }
+
+    &__btn {}
+
+    &__empty {
+        margin: calc($def-padding*2) 0 calc($def-padding*3);
+    }
+
+
+    &-final {
+        width: 33.333%;
+        padding: calc($def-padding * 2) $def-padding;
+        display: flex;
+        flex-direction: column;
+        background-color: $background-cart;
+
+        &__text {
+            margin-bottom: $small-pading;
+        }
+
+        &__price {
+            margin-bottom: $def-padding;
+            position: relative;
+
+            &::after {
+                content: 'Based on average book price, final price will be sent on your e-mail';
+                display: block;
+                font-size: $font-size-extrasmall;
+                width: 110%;
+                position: absolute;
+                left: -5%;
+            }
+        }
+
+        &__btn {
+            margin: 0 auto $small-pading;
+            border-radius: $def-padding;
+        }
+    }
+
+}
+
+.contact-form {
+
+    &__label,
+    &__input {
+        width: 100%;
+        display: block;
+        margin-bottom: $small-pading;
+    }
+
+    &__input {
+        padding: 8px;
+        border-radius: $small-pading;
+        border: 2px solid black;
+
+        &_invalid {
+            border: 2px solid red;
+
+            &:focus {
+                outline-color: red;
+            }
+        }
+
+        &:last-of-type {
+            margin-bottom: $def-padding;
+        }
+    }
+}
+
+.cart-slide {
+    position: fixed;
+    top: -300px;
+    background-color: $background-slide;
+    padding: calc($small-pading * 2) calc($def-padding * 2);
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid $background-footer;
+    border-radius: 5px;
+    transition: top 2s ease-in-out;
+
+    &_active {
+        top: 5px;
+    }
+
+    &__title {
+        margin-bottom: calc($small-pading / 2);
+        font-weight: $font-weight-bold;
+    }
+}

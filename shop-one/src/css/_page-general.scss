@@ -1,0 +1,42 @@
+.page {
+    font-family: $font;
+    font-size: $font-size-main;
+    max-width: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: $background-page;
+}
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+.text {}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: $def-padding 2*$def-padding;
+    background-color: white;
+    position: relative;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    border-radius: $small-pading;
+}
+
+.main {
+    margin-bottom: 25px;
+}
+
+.navbar {
+    padding: calc($small-pading*2);
+}
+
+.btn {
+    padding: 7px $def-padding;
+}

@@ -1,0 +1,50 @@
+.header {
+    font-size: $font-size-header;
+    padding: $def-padding 0;
+    margin-bottom: $def-padding;
+    box-shadow: 0 1px 8px $background-footer;
+    max-height: 100%;
+    margin-top: 0;
+    overflow-y: hidden;
+}
+
+.user-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__center {
+        font-weight: 600;
+        font-style: italic;
+        text-transform: capitalize;
+    }
+
+    &__item {
+        max-width: 25%;
+        width: 100%;
+
+        &:nth-of-type(2n) {
+            max-width: 50%;
+        }
+    }
+
+    &__anchor {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.user-log {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__svg {
+        margin-right: $small-pading;
+    }
+
+    &__options {
+        display: flex;
+    }
+}

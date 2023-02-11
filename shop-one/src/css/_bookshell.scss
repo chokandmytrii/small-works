@@ -1,0 +1,125 @@
+.bookshell {
+    &__navbar {
+        margin-bottom: calc($def-padding * 1.5);
+    }
+
+    &__table {
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 25%;
+        flex-wrap: wrap;
+    }
+
+    &__btn {
+        position: relative;
+
+        &-wrapper {
+            width: 250px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        &_loader {
+            position: absolute;
+            left: $small-pading;
+            top: 0;
+            left: 90%;
+        }
+    }
+}
+
+.book-element {
+    width: calc(25% - 18.75px);
+    border-radius: calc($small-pading / 2);
+    background-color: $background-book;
+    margin: 0 $def-padding calc($def-padding * 1.5) 0;
+
+    &:nth-of-type(4n) {
+        margin-right: 0;
+    }
+
+    &:hover {
+        background-color: $background-footer;
+    }
+
+    &__wrapper {
+        height: 100%;
+        padding: $small-pading calc($def-padding * 2.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__cover {
+        align-self: center;
+        max-height: 220px;
+        height: 100%;
+        width: 100%;
+        border: 1px solid $background-footer;
+        border-radius: 3px;
+        margin-bottom: $small-pading;
+    }
+
+    &__title {
+        margin-bottom: $small-pading;
+    }
+
+    &__text {
+        &-wrapper {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+
+    &__par {
+        margin-bottom: $small-pading;
+    }
+
+    &__btn {
+        border: 1px solid $background-cart;
+        padding: 7px calc($small-pading * 2);
+        flex-grow: 1;
+
+        &:focus {
+            box-shadow: none;
+        }
+
+        &:active,
+        &:hover {
+            background-color: $book-btn;
+        }
+    }
+}
+
+.dropdown {
+    &-item {
+        cursor: pointer;
+    }
+}
+
+
+.navbar {
+    &__topic {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &-collapse {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+
+.form-inline {
+    display: flex;
+}
+
+.form-control {
+    max-width: 250px;
+    width: 100%;
+    margin-right: $small-pading;
+    border-radius: $small-pading;
+}
